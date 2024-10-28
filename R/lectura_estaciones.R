@@ -1,4 +1,19 @@
-
+#' Lectura de archivos
+#'
+#' La función `lectura_estaciones()` toma como parametro el id de la estación a estudiar y la ruta del archivo,
+#' si el archivo ya estaba descargado, lo disponibiliza para su posterior analisis, y de lo contrario,
+#' lo descarga y luego lo diaponibiliza
+#'
+#' @param id_estacion conjunto de números y letras que identifica la estación
+#' @param ruta la ruta donde se encuentra el archivo
+#'
+#' @return variable que contiene el archivo disponible para su análisis
+#'
+#' @examples
+#' lectura_estaciones("NH0437", "./documentos/programacion/ejs_parcial")
+#' lectura_estaciones("NH0098", "./escritorio/programacion/ejs_parcial")
+#'
+#'
 lectura_estaciones <- function(id_estacion, ruta) {
   estacion_url <- switch(id_estacion,
                          "NH0046" = "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0046.csv",
