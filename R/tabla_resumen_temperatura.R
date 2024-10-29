@@ -1,4 +1,13 @@
-
+#' Title
+#'
+#' @param data
+#'
+#' @return
+#'
+#' @examples
+#'
+#'
+#' @export
 tabla_resumen_temperatura <- function(data) {
   resumen <- data |>
     dplyr::group_by(id) |>
