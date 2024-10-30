@@ -2,6 +2,7 @@ Package: datosclima
 Title: Paquete que contiene datos meteorológicos
 Version: 0.0.0.9000
 Authors@R: 
+    person("Juana", "Sacco" ,email="jsacco@mail.austral.edu.ar", role = c("aut", "cre"))
     person("Paz", "Sevilla" ,email="psevilla@mail.austral.edu.ar", role = c("aut", "cre"))
 Description: Este paquete no esta pensado para ser instalado.
     Fue creado para trabajar en clase para aprender a desarrollar paquetes en R.
