@@ -17,3 +17,23 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(datosclima)
 ```
+
+Esta viñeta es para demostrar como utilizar las funciones de este paquete.
+
+-   La funcion `lectura_estaciones()` sirve para leer o descargar datos de estaciones agroclimaticas.
+
+```{r}
+lectura_estaciones("NH0046", "~/prueba_paquete")
+```
+
+-   La funcion `tabla_resumen_temperatura()` sirve para resumir los datos del archivo de la estacion ingresada.
+
+```{r}
+tabla_resumen_temperatura(NH0098)
+```
+
+-   La funcion `grafico_temperatura_mensual()` sirve para graficar la temperatura promedio de los meses registrados.
+
+```{r}
+grafico_temperatura_mensual(NH0046, color = "deeppink", titulo = "Promedio de Temperaturas")
+```

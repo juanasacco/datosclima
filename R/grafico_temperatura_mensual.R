@@ -28,7 +28,7 @@ grafico_temperatura_mensual <- function(dataframe, color = "magenta", titulo = "
 
   return(
     ggplot2::ggplot(df_resumen, ggplot2::aes(x = mes, y = temperatura_abrigo)) +
-      ggplot2::geom_point(color = color) +
+      ggplot2::geom_line(color = color) +
       ggplot2::labs(title = titulo, x = "Mes", y = "Temperatura Promedio")
   )
 }
