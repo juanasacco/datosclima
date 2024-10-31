@@ -69,7 +69,7 @@ NH0437
 - Con la funcion `grafico_temperatura_mensual()`:
 
 ``` r
-grafico_temperatura_mensual(datos_estaciones, NH0437,color = "magenta")
+grafico_temperatura_mensual(NH0437,color = "magenta")
 ```
 
 <img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />

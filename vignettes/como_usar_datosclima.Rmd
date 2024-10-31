@@ -1,0 +1,19 @@
+---
+title: "como_usar_datosclima"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{como_usar_datosclima}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(datosclima)
+```

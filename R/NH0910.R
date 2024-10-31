@@ -1,6 +1,6 @@
-#' Datos estaciones
+#' NH0910
 #'
-#' Conjunto de datos recopilados de las estaciones agroclimaticas del INTA
+#' Conjunto de datos recopilados en la estacion NH0910 del INTA
 #'
 #' @format
 #' \describe{
@@ -44,4 +44,4 @@
 #' }
 #' @source Datos que diponibiliza el Institulo Nacional de Tecnología Agropecuaria INTA
 #' a traves del Sistema de Información y Gestión Agropecuaria SIGA.
-"datos_estaciones"
+"NH0910"

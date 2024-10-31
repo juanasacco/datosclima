@@ -27,6 +27,8 @@ NH0046 <- readr::read_csv("data_raw/NH0046.csv")
 NH0098 <- readr::read_csv("data_raw/NH0098.csv")
 NH0437 <- readr::read_csv("data_raw/NH0437.csv")
 
-datos_estaciones <- rbind(NH0472, NH0910, NH0046,NH0098,NH0437)
-
-
+usethis::use_data(NH0472)
+usethis::use_data(NH0910)
+usethis::use_data(NH0046)
+usethis::use_data(NH0098)
+usethis::use_data(NH0437)

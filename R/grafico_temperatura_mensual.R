@@ -18,7 +18,7 @@
 #' grafico_temperatura_mensual(datos_estaciones)
 #'
 #' @export
-grafico_temperatura_mensual <- function(dataframe, id, color = "magenta", titulo = "Temperatura") {
+grafico_temperatura_mensual <- function(dataframe, color = "magenta", titulo = "Temperatura") {
   df_resumen <- dataframe |>
     dplyr::mutate(fecha = as.Date(fecha)) |>
     dplyr::mutate(anio = lubridate::year(fecha), mes = lubridate::month(fecha)) |>

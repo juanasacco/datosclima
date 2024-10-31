@@ -6,7 +6,6 @@
 \usage{
 grafico_temperatura_mensual(
   dataframe,
-  id,
   color = "magenta",
   titulo = "Temperatura"
 )
@@ -14,10 +13,10 @@ grafico_temperatura_mensual(
 \arguments{
 \item{dataframe}{nombre del dataframe a utilizar}
 
-\item{id}{clave unica de identificacion de la estacion agroclimatica}
-
 \item{color}{(opcional) color que desea utilizar en el gráfico, expresado en
 rgb, hsvy, hcl, o el nombre del color en ingles}
+
+\item{id}{clave unica de identificacion de la estacion agroclimatica}
 
 \item{título}{(opcional) el nombre asignado para el gráfico escrito entre comillas}
 }

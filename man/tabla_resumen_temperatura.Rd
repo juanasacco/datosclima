@@ -4,7 +4,7 @@
 \alias{tabla_resumen_temperatura}
 \title{Tabla de resumen}
 \usage{
-tabla_resumen_temperatura(data, id)
+tabla_resumen_temperatura(data)
 }
 \arguments{
 \item{data}{nombre del dataframe a utilizar}
