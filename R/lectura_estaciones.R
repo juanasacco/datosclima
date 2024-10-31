@@ -10,7 +10,7 @@
 #' @return variable que contiene el archivo disponible para su análisis
 #'
 #' @examples
-#' lectura_estaciones("NH0437", "./documentos/programacion/ejs_parcial")
+#' lectura_estaciones("NH0437", "./documentos/programacion/datos")
 #' lectura_estaciones("NH0098", "./escritorio/programacion/ejs_parcial")
 #'
 #' @export

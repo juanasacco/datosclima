@@ -4,20 +4,21 @@
 #' calcula el promedio de la temperatura de cada mes y lo grafica
 #'
 #' @param dataframe nombre del dataframe a utilizar
+#' @param id clave unica de identificacion de la estacion agroclimatica
 #' @param color (opcional) color que desea utilizar en el gráfico, expresado en
 #' rgb, hsvy, hcl, o el nombre del color en ingles
 #' @param título (opcional) el nombre asignado para el gráfico escrito entre comillas
 #'
-#' @return gráfico de puntos indicando el promedio de la temperatura a lo largo del año
+#' @return grafico de puntos indicando el promedio de la temperatura a lo largo del año
 #'
 #' @examples
-#' grafico_temperatura_mensual(NH0910,color = "magenta", título = "Temperatura promedio mensual")
-#' grafico_temperatura_mensual(NH0098, título = "Temperatura de todos los meses")
-#' grafico_temperatura_mensual(NH0046,color = "blue")
-#' grafico_temperatura_mensual(NH0472)
+#' grafico_temperatura_mensual(datos_estaciones,color = "magenta", titulo = "Temperatura promedio mensual")
+#' grafico_temperatura_mensual(datos_estaciones, título = "Temperatura de todos los meses")
+#' grafico_temperatura_mensual(datos_estaciones,color = "blue")
+#' grafico_temperatura_mensual(datos_estaciones)
 #'
 #' @export
-grafico_temperatura_mensual <- function(dataframe, color = "magenta", titulo = "Temperatura") {
+grafico_temperatura_mensual <- function(dataframe, id, color = "magenta", titulo = "Temperatura") {
   df_resumen <- dataframe |>
     dplyr::mutate(fecha = as.Date(fecha)) |>
     dplyr::mutate(anio = lubridate::year(fecha), mes = lubridate::month(fecha)) |>

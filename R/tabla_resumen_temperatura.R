@@ -5,20 +5,19 @@
 #'
 #'
 #' @param data nombre del dataframe a utilizar
+#' @param id clave unica de identificacion de la estacion agroclimatica
 #'
 #' @return tabla que contiene un resumen de los datos de la temperatura
 #' @examples
-#' tabla_resumen_temperatura("NH0910")
-#' tabla_resumen_tempertura("NH0046")
+#' tabla_resumen_temperatura(datos_estaciones, "NH0910")
+#' tabla_resumen_tempertura(datos_estaciones)
 #'
 #'
 #' @export
-tabla_resumen_temperatura <- function(data) {
+tabla_resumen_temperatura <- function(data, id) {
   resumen <- data |>
     dplyr::group_by(id) |>
-    dplyr::reframe(media_temp = mean(temperatura_abrigo_150cm, na.rm = TRUE),
-                   mediana_temp = median(temperatura_abrigo_150cm, na.rm = TRUE),
-                   sd_temp = sd(temperatura_abrigo_150cm, na.rm = TRUE))
+    dplyr::summarise(resumen_temp = summary(temperatura_abrigo_150cm))
 
   return(resumen)
 }

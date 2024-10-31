@@ -20,7 +20,7 @@ si el archivo ya estaba descargado, lo disponibiliza para su posterior analisis,
 lo descarga y luego lo diaponibiliza
 }
 \examples{
-lectura_estaciones("NH0437", "./documentos/programacion/ejs_parcial")
+lectura_estaciones("NH0437", "./documentos/programacion/datos")
 lectura_estaciones("NH0098", "./escritorio/programacion/ejs_parcial")
 
 }
