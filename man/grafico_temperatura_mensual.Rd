@@ -6,8 +6,8 @@
 \usage{
 grafico_temperatura_mensual(
   dataframe,
-  color = colors(distinct = TRUE),
-  título = "Temperatura"
+  color = "magenta",
+  titulo = "Temperatura"
 )
 }
 \arguments{

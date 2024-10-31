@@ -23,5 +23,4 @@ lo descarga y luego lo diaponibiliza
 lectura_estaciones("NH0437", "./documentos/programacion/ejs_parcial")
 lectura_estaciones("NH0098", "./escritorio/programacion/ejs_parcial")
 
-
 }

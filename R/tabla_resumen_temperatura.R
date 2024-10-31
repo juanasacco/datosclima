@@ -16,8 +16,10 @@
 tabla_resumen_temperatura <- function(data) {
   resumen <- data |>
     dplyr::group_by(id) |>
-    dplyr::summarise( resumen_temp = list(summary(temperatura_abrigo_150cm))
-    )
+    dplyr::reframe(media_temp = mean(temperatura_abrigo_150cm, na.rm = TRUE),
+                   mediana_temp = median(temperatura_abrigo_150cm, na.rm = TRUE),
+                   sd_temp = sd(temperatura_abrigo_150cm, na.rm = TRUE))
 
   return(resumen)
 }
+

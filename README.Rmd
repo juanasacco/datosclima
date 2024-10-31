@@ -1,0 +1,54 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# datosclima
+
+<!-- badges: start -->
+
+<!-- badges: end -->
+
+El objetivo de datosclima es aprender a desarrollar paquetes con RStudio
+
+## Instalacion
+
+Podes instalar la version de desarrollo de datosclima desde [GitHub](https://github.com/) con:
+
+``` r
+# install.packages("pak")
+pak::pak("juanasacco/datosclima")
+```
+
+## Ejemplo
+
+Aqui mostramos ejemplos basicos de como resolver problemas relacionados a nuestras funciones:
+
+-   Con la funcion `lectura_estaciones()`:
+
+```{r}
+library(datosclima)
+NH0437 <- lectura_estaciones("NH0437", "~/prueba_paquete")
+NH0437
+```
+
+-   Con la funcion `grafico_temperatura_mensual()`:
+```{r}
+grafico_temperatura_mensual(NH0437,color = "magenta")
+```
+
+- Con la funcion `tabla_resumen_temperatura()`:
+```{r}
+tabla_resumen_temperatura(NH0437)
+```
+

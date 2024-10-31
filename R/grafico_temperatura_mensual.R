@@ -17,17 +17,24 @@
 #' grafico_temperatura_mensual(NH0472)
 #'
 #' @export
-grafico_temperatura_mensual<- function(dataframe, color = colors(distinct = TRUE), título="Temperatura" )
-  {
-  dataframe |>
+grafico_temperatura_mensual <- function(dataframe, color = "magenta", titulo = "Temperatura") {
+  df_resumen <- dataframe |>
     dplyr::mutate(fecha = as.Date(fecha)) |>
-    dplyr::mutate(anio = year(fecha), mes = month(fecha)) |>
+    dplyr::mutate(anio = lubridate::year(fecha), mes = lubridate::month(fecha)) |>
     dplyr::group_by(id, mes) |>
-    dplyr::summarise(temperatura_abrigo = mean(temperatura_abrigo_150cm, na.rm = TRUE))
+    dplyr::summarise(temperatura_abrigo = mean(temperatura_abrigo_150cm, na.rm = TRUE), .groups = "drop")
+  df_resumen <- as.data.frame(df_resumen)
 
-  return(ggplot2::ggplot(aes(mes, temperatura_abrigo, color = color)) +
-           geom_point() )
-
+  return(
+    ggplot2::ggplot(df_resumen, ggplot2::aes(x = mes, y = temperatura_abrigo)) +
+      ggplot2::geom_point(color = color) +
+      ggplot2::labs(title = titulo, x = "Mes", y = "Temperatura Promedio")
+  )
 }
+
+
+
+
+
 
 
