@@ -14,7 +14,7 @@ RoxygenNote: 7.3.2
 Depends: 
     R (>= 2.10)
 LazyData: true
-URL: https://github.com/juanasacco/datosclima
+URL: https://github.com/juanasacco/datosclima, https://juanasacco.github.io/datosclima/
 BugReports: https://github.com/juanasacco/datosclima/issues
 Imports: 
     dplyr,
