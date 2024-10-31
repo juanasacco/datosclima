@@ -35,7 +35,7 @@
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
-<li><a class="dropdown-item" href="articles/como_usar_datosclima.html">como_usar_datosclima</a></li>
+<li><a class="dropdown-item" href="articles/como_usar_datosclima.html">Como_usar_datosclima</a></li>
   </ul>
 </li>
       </ul>
@@ -74,43 +74,8 @@
 </ul>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/juanasacco/datosclima" class="external-link">datosclima</a></span><span class="op">)</span></span>
-<span><span class="va">NH0437</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/lectura_estaciones.html">lectura_estaciones</a></span><span class="op">(</span><span class="st">"NH0437"</span>, <span class="st">"~/prueba_paquete"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Warning: One or more parsing issues, call `problems()` on your data frame for details,</span></span>
-<span><span class="co">#&gt; e.g.:</span></span>
-<span><span class="co">#&gt;   dat &lt;- vroom(...)</span></span>
-<span><span class="co">#&gt;   problems(dat)</span></span>
-<span><span class="co">#&gt; Rows: 18929 Columns: 35</span></span>
-<span><span class="co">#&gt; ── Column specification ────────────────────────────────────────────────────────</span></span>
-<span><span class="co">#&gt; Delimiter: ","</span></span>
-<span><span class="co">#&gt; chr   (2): id, direccion_viento_1000cm</span></span>
-<span><span class="co">#&gt; dbl  (22): temperatura_abrigo_150cm, temperatura_abrigo_150cm_maxima, temper...</span></span>
-<span><span class="co">#&gt; lgl  (10): temperatura_suelo_10cm_media, temperatura_inte_5cm, temperatura_i...</span></span>
-<span><span class="co">#&gt; date  (1): fecha</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; ℹ Use `spec()` to retrieve the full column specification for this data.</span></span>
-<span><span class="co">#&gt; ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</span></span>
-<span><span class="co">#&gt; El archivo ya existía, se leyó el archivo.</span></span>
-<span><span class="va">NH0437</span></span>
-<span><span class="co">#&gt; # A tibble: 18,929 × 35</span></span>
-<span><span class="co">#&gt;    id     fecha      temperatura_abrigo_150cm temperatura_abrigo_150cm_maxima</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;  &lt;date&gt;                        &lt;dbl&gt;                           &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt;  1 NH0437 1970-08-01                    23.3                             31.2</span></span>
-<span><span class="co">#&gt;  2 NH0437 1970-08-02                    26.6                             32.1</span></span>
-<span><span class="co">#&gt;  3 NH0437 1970-08-03                    17.4                             22.9</span></span>
-<span><span class="co">#&gt;  4 NH0437 1970-08-04                    11.0                             11.9</span></span>
-<span><span class="co">#&gt;  5 NH0437 1970-08-05                    11.1                             12.6</span></span>
-<span><span class="co">#&gt;  6 NH0437 1970-08-06                    13.6                             15.1</span></span>
-<span><span class="co">#&gt;  7 NH0437 1970-08-07                    10.8                             14.9</span></span>
-<span><span class="co">#&gt;  8 NH0437 1970-08-08                     7.75                            13.7</span></span>
-<span><span class="co">#&gt;  9 NH0437 1970-08-09                     8.2                             15.1</span></span>
-<span><span class="co">#&gt; 10 NH0437 1970-08-10                    10.2                             18.4</span></span>
-<span><span class="co">#&gt; # ℹ 18,919 more rows</span></span>
-<span><span class="co">#&gt; # ℹ 31 more variables: temperatura_abrigo_150cm_minima &lt;dbl&gt;,</span></span>
-<span><span class="co">#&gt; #   temperatura_intemperie_5cm_minima &lt;dbl&gt;,</span></span>
-<span><span class="co">#&gt; #   temperatura_intemperie_50cm_minima &lt;dbl&gt;,</span></span>
-<span><span class="co">#&gt; #   temperatura_suelo_5cm_media &lt;dbl&gt;, temperatura_suelo_10cm_media &lt;lgl&gt;,</span></span>
-<span><span class="co">#&gt; #   temperatura_inte_5cm &lt;lgl&gt;, temperatura_intemperie_150cm_minima &lt;lgl&gt;,</span></span>
-<span><span class="co">#&gt; #   humedad_suelo &lt;lgl&gt;, precipitacion_pluviometrica &lt;dbl&gt;, granizo &lt;dbl&gt;, …</span></span></code></pre></div>
+<span></span>
+<span><span class="va">NH0437</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/message.html" class="external-link">suppressMessages</a></span><span class="op">(</span><span class="fu"><a href="reference/lectura_estaciones.html">lectura_estaciones</a></span><span class="op">(</span><span class="st">"NH0437"</span>, <span class="st">"~/prueba_paquete"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <ul>
 <li>Con la funcion <code><a href="reference/grafico_temperatura_mensual.html">grafico_temperatura_mensual()</a></code>:</li>
 </ul>
@@ -121,17 +86,8 @@
 <li>Con la funcion <code><a href="reference/tabla_resumen_temperatura.html">tabla_resumen_temperatura()</a></code>:</li>
 </ul>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/tabla_resumen_temperatura.html">tabla_resumen_temperatura</a></span><span class="op">(</span><span class="va">NH0437</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Warning: Returning more (or less) than 1 row per `summarise()` group was deprecated in</span></span>
-<span><span class="co">#&gt; dplyr 1.1.0.</span></span>
-<span><span class="co">#&gt; ℹ Please use `reframe()` instead.</span></span>
-<span><span class="co">#&gt; ℹ When switching from `summarise()` to `reframe()`, remember that `reframe()`</span></span>
-<span><span class="co">#&gt;   always returns an ungrouped data frame and adjust accordingly.</span></span>
-<span><span class="co">#&gt; ℹ The deprecated feature was likely used in the datosclima package.</span></span>
-<span><span class="co">#&gt;   Please report the issue at &lt;https://github.com/juanasacco/datosclima/issues&gt;.</span></span>
-<span><span class="co">#&gt; This warning is displayed once every 8 hours.</span></span>
-<span><span class="co">#&gt; Call `lifecycle::last_lifecycle_warnings()` to see where this warning was</span></span>
-<span><span class="co">#&gt; generated.</span></span>
+<code class="sourceCode R"><span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/message.html" class="external-link">suppressMessages</a></span><span class="op">(</span><span class="fu"><a href="reference/tabla_resumen_temperatura.html">tabla_resumen_temperatura</a></span><span class="op">(</span><span class="va">NH0437</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 7 × 2</span></span>
 <span><span class="co">#&gt; # Groups:   id [1]</span></span>
 <span><span class="co">#&gt;   id     resumen_temp</span></span>
