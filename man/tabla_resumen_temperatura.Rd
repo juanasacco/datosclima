@@ -19,8 +19,8 @@ La funcion \code{tabla_resumen_temperatura()} toma como argumento un dataframe y
 resume los datos de la temperatura
 }
 \examples{
-tabla_resumen_temperatura(datos_estaciones, "NH0910")
-tabla_resumen_tempertura(datos_estaciones)
+tabla_resumen_temperatura(NH0910)
+tabla_resumen_tempertura(NH0046)
 
 
 }

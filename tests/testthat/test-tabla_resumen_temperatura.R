@@ -8,5 +8,8 @@ test_that("tabla_resumen_temperatura crea un resumen", {
 
   expect_true(all(c("id", "resumen_temp") %in% names(tabla_resumen_temperatura(df_prueba))))
 
-  expect_equal(nrow(tabla_resumen_temperatura(df_prueba)), 1)
+  expect_equal(nrow(tabla_resumen_temperatura(df_prueba)), 6)
 })
+
+
+

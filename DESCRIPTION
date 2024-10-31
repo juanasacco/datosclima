@@ -6,8 +6,7 @@ Authors@R:
     person("Paz", "Sevilla" ,email="psevilla@mail.austral.edu.ar", role = c("aut", "cre"))
 Description: Este paquete no esta pensado para ser instalado.
     Fue creado para trabajar en clase para aprender a desarrollar paquetes en R.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
@@ -17,6 +16,7 @@ LazyData: true
 URL: https://github.com/juanasacco/datosclima, https://juanasacco.github.io/datosclima/
 BugReports: https://github.com/juanasacco/datosclima/issues
 Imports: 
+    cli,
     dplyr,
     ggplot2,
     lubridate,

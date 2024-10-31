@@ -16,9 +16,7 @@ grafico_temperatura_mensual(
 \item{color}{(opcional) color que desea utilizar en el gráfico, expresado en
 rgb, hsvy, hcl, o el nombre del color en ingles}
 
-\item{id}{clave unica de identificacion de la estacion agroclimatica}
-
-\item{título}{(opcional) el nombre asignado para el gráfico escrito entre comillas}
+\item{titulo}{(opcional) el nombre asignado para el gráfico escrito entre comillas}
 }
 \value{
 grafico de puntos indicando el promedio de la temperatura a lo largo del año
@@ -28,9 +26,9 @@ La función \code{grafico_temperatura_mensual()} toma como argumento un datafram
 calcula el promedio de la temperatura de cada mes y lo grafica
 }
 \examples{
-grafico_temperatura_mensual(datos_estaciones,color = "magenta", titulo = "Temperatura promedio mensual")
-grafico_temperatura_mensual(datos_estaciones, título = "Temperatura de todos los meses")
-grafico_temperatura_mensual(datos_estaciones,color = "blue")
-grafico_temperatura_mensual(datos_estaciones)
+grafico_temperatura_mensual(NH0910, color = "magenta", titulo = "Temperatura promedio mensual")
+grafico_temperatura_mensual(NH0437, titulo = "Temperatura de todos los meses")
+grafico_temperatura_mensual(NH0472, color = "blue")
+grafico_temperatura_mensual(NH0046)
 
 }
