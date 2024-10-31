@@ -36,10 +36,10 @@ Aqui mostramos ejemplos basicos de como resolver problemas relacionados a nuestr
 
 -   Con la funcion `lectura_estaciones()`:
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 library(datosclima)
-NH0437 <- lectura_estaciones("NH0437", "~/prueba_paquete")
-NH0437
+
+NH0437 <- suppressMessages(lectura_estaciones("NH0437", "~/prueba_paquete"))
 ```
 
 -   Con la funcion `grafico_temperatura_mensual()`:
@@ -48,7 +48,8 @@ grafico_temperatura_mensual(NH0437,color = "magenta")
 ```
 
 - Con la funcion `tabla_resumen_temperatura()`:
-```{r}
-tabla_resumen_temperatura(NH0437)
+```{r, message=FALSE, warning=FALSE}
+
+suppressMessages(tabla_resumen_temperatura(NH0437))
 ```
 

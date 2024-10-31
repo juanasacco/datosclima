@@ -7,7 +7,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r, include = FALSE}---}
+```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
@@ -22,14 +22,16 @@ Esta viñeta es para demostrar como utilizar las funciones de este paquete.
 
 -   La funcion `lectura_estaciones()` sirve para leer o descargar datos de estaciones agroclimaticas.
 
-```{r}
-lectura_estaciones("NH0046", "~/prueba_paquete")
+```{r, message=FALSE, warning=FALSE}
+suppressMessages(lectura_estaciones("NH0046", "~/prueba_paquete"))
+
 ```
 
 -   La funcion `tabla_resumen_temperatura()` sirve para resumir los datos del archivo de la estacion ingresada.
 
-```{r}
-tabla_resumen_temperatura(NH0098)
+```{r, message=FALSE, warning=FALSE}
+suppressMessages(tabla_resumen_temperatura(NH0098))
+
 ```
 
 -   La funcion `grafico_temperatura_mensual()` sirve para graficar la temperatura promedio de los meses registrados.
