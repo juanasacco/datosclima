@@ -14,7 +14,7 @@ RoxygenNote: 7.3.2
 Depends: 
     R (>= 2.10)
 LazyData: true
-URL: https://github.com/juanasacco/datosclima
+URL: https://github.com/juanasacco/datosclima, https://juanasacco.github.io/datosclima/
 BugReports: https://github.com/juanasacco/datosclima/issues
 Imports: 
     dplyr,
@@ -23,5 +23,7 @@ Imports:
     readr
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    testthat (>= 3.0.0)
 VignetteBuilder: knitr
+Config/testthat/edition: 3
