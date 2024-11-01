@@ -3,7 +3,7 @@ pkgdown: 2.1.1
 pkgdown_sha: ~
 articles:
   como_usar_datosclima: como_usar_datosclima.html
-last_built: 2024-11-01T04:05Z
+last_built: 2024-11-01T04:09Z
 urls:
   reference: https://juanasacco.github.io/datosclima/reference
   article: https://juanasacco.github.io/datosclima/articles
