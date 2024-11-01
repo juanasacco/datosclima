@@ -6,27 +6,27 @@
 \title{Metadatos}
 \format{
 \describe{
-\item{id}{Clave unica de identificacion de la estacion agroclimatica}
-\item{nombre}{Nombre de la estacion agroclimatica}
-\item{tipo}{Tipo de estacion}
-\item{localidad}{Nombre de la localidad en la que esta ubicada la estacion}
-\item{provincia}{Nombre de la provincia en la que se encuentra la estacion}
-\item{lat}{Latitud de la ubicacion de la estacion}
-\item{lon}{Longitud de la ubicacion de la estacion}
-\item{altura}{Altura de la estacion sobre el nivel del mar}
-\item{ubicacion}{Direccion exacta de la ubicacion de la estacion}
-\item{desde}{Fecha en la que se comenzo a recopilar datos en la estacion}
-\item{hasta}{Ultima fecha en la que recopilaron datos en la estacion}
+\item{id}{Clave única de identificación de la estacion agroclimática}
+\item{nombre}{Nombre de la estación agroclimática}
+\item{tipo}{Tipo de estación}
+\item{localidad}{Nombre de la localidad en la que esta ubicada la estación}
+\item{provincia}{Nombre de la provincia en la que se encuentra la estación}
+\item{lat}{Latitud de la ubicacion de la estación}
+\item{lon}{Longitud de la ubicacion de la estación}
+\item{altura}{Altura de la estación sobre el nivel del mar}
+\item{ubicacion}{Dirección exacta de la ubicacion de la estación}
+\item{desde}{Fecha en la que se comenzó a recopilar datos en la estación}
+\item{hasta}{Última fecha en la que recopilaron datos en la estación}
 }
 }
 \source{
 Datos que diponibiliza el Institulo Nacional de Tecnología Agropecuaria INTA
-a traves del Sistema de Información y Gestión Agropecuaria SIGA.
+a traves del Sistema de Información y Gestión Agropecuaria SIGA.
 }
 \usage{
 metadatos
 }
 \description{
-Datos sobre estaciones agroclimaticas INTA (Instituto Nacional de Tecnología Agropecuaria )
+Datos sobre estaciones agroclimáticas INTA (Instituto Nacional de Tecnología Agropecuaria )
 }
 \keyword{datasets}

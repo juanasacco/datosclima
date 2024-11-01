@@ -8,19 +8,17 @@ tabla_resumen_temperatura(data)
 }
 \arguments{
 \item{data}{nombre del dataframe a utilizar}
-
-\item{id}{clave unica de identificacion de la estacion agroclimatica}
 }
 \value{
 tabla que contiene un resumen de los datos de la temperatura
 }
 \description{
-La funcion \code{tabla_resumen_temperatura()} toma como argumento un dataframe y
+La función \code{tabla_resumen_temperatura()} toma como argumento un dataframe y
 resume los datos de la temperatura
 }
 \examples{
 tabla_resumen_temperatura(NH0910)
-tabla_resumen_tempertura(NH0046)
+tabla_resumen_temperatura(NH0046)
 
 
 }

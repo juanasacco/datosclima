@@ -31,10 +31,3 @@ grafico_temperatura_mensual <- function(dataframe, color = "magenta", titulo = "
       ggplot2::labs(title = titulo, x = "Mes", y = "Temperatura Promedio")
   )
 }
-
-
-
-
-
-
-

@@ -14,12 +14,12 @@ grafico_temperatura_mensual(
 \item{dataframe}{nombre del dataframe a utilizar}
 
 \item{color}{(opcional) color que desea utilizar en el gráfico, expresado en
-rgb, hsvy, hcl, o el nombre del color en ingles}
+rgb, hsvy, hcl, o el nombre del color en inglés}
 
 \item{titulo}{(opcional) el nombre asignado para el gráfico escrito entre comillas}
 }
 \value{
-grafico de puntos indicando el promedio de la temperatura a lo largo del año
+gráfico de puntos indicando el promedio de la temperatura a lo largo del año
 }
 \description{
 La función \code{grafico_temperatura_mensual()} toma como argumento un dataframe,

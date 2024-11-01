@@ -5,12 +5,11 @@
 #'
 #'
 #' @param data nombre del dataframe a utilizar
-#' @param id clave única de identificación de la estación agroclimática
 #'
 #' @return tabla que contiene un resumen de los datos de la temperatura
 #' @examples
 #' tabla_resumen_temperatura(NH0910)
-#' tabla_resumen_tempertura(NH0046)
+#' tabla_resumen_temperatura(NH0046)
 #'
 #'
 #' @export
@@ -21,4 +20,3 @@ tabla_resumen_temperatura <- function(data) {
 
   return(resumen)
 }
-
