@@ -25,13 +25,13 @@ lectura_estaciones <- function(id_estacion, ruta) {
 
   if (file.exists(ruta)) {
     id_estacion <- readr::read_csv(ruta)
-    cli::cli_inform("El archivo ya existía, se leyó el archivo.")
+    cli::cli_inform("El archivo ya existU+00EDa, se leyU+00F3 el archivo.")
   }
 
   else {
     download.file(estacion_url, ruta)
     id_estacion <- readr::read_csv(ruta)
-    cli::cli_inform("El archivo no existía, por lo cual se descargó y luego se leyó.")
+    cli::cli_inform("El archivo no existU+00EDa, por lo cual se descargU+00F3 y luego se leyU+00F3.")
   }
   return(id_estacion)
 }

@@ -1,11 +1,11 @@
 #' Tabla de resumen
 #'
-#' La funcion `tabla_resumen_temperatura()` toma como argumento un dataframe y
+#' La función `tabla_resumen_temperatura()` toma como argumento un dataframe y
 #' resume los datos de la temperatura
 #'
 #'
 #' @param data nombre del dataframe a utilizar
-#' @param id clave unica de identificacion de la estacion agroclimatica
+#' @param id clave única de identificación de la estación agroclimática
 #'
 #' @return tabla que contiene un resumen de los datos de la temperatura
 #' @examples

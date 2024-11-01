@@ -5,10 +5,10 @@
 #'
 #' @param dataframe nombre del dataframe a utilizar
 #' @param color (opcional) color que desea utilizar en el gráfico, expresado en
-#' rgb, hsvy, hcl, o el nombre del color en ingles
+#' rgb, hsvy, hcl, o el nombre del color en inglés
 #' @param titulo (opcional) el nombre asignado para el gráfico escrito entre comillas
 #'
-#' @return grafico de puntos indicando el promedio de la temperatura a lo largo del año
+#' @return gráfico de puntos indicando el promedio de la temperatura a lo largo del año
 #'
 #' @examples
 #' grafico_temperatura_mensual(NH0910, color = "magenta", titulo = "Temperatura promedio mensual")
