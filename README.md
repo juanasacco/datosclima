@@ -4,6 +4,12 @@
 # datosclima
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/juanasacco/datosclima/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/juanasacco/datosclima/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/juanasacco/datosclima/graph/badge.svg)](https://app.codecov.io/gh/juanasacco/datosclima)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 El objetivo de datosclima es aprender a desarrollar paquetes con RStudio
@@ -45,14 +51,13 @@ grafico_temperatura_mensual(NH0437,color = "magenta")
 
 suppressMessages(tabla_resumen_temperatura(NH0437))
 #> # A tibble: 7 × 2
-#> # Groups:   id [1]
 #>   id     resumen_temp
 #>   <chr>  <table[1d]> 
-#> 1 NH0437   2.10000   
-#> 2 NH0437  16.00000   
-#> 3 NH0437  21.00000   
-#> 4 NH0437  20.23105   
-#> 5 NH0437  24.70000   
-#> 6 NH0437  36.30000   
-#> 7 NH0437 191.00000
+#> 1 NH0046  -0.25000   
+#> 2 NH0046  12.75000   
+#> 3 NH0046  17.65000   
+#> 4 NH0046  17.28705   
+#> 5 NH0046  22.00000   
+#> 6 NH0046  34.60000   
+#> 7 NH0046 259.00000
 ```
