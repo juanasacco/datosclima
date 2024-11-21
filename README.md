@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# datosclima
+# Datosclima
 
 <!-- badges: start -->
 
@@ -14,7 +14,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 
 El objetivo de datosclima es aprender a desarrollar paquetes con RStudio
 
-## Instalacion
+## Instalación
 
 Podes instalar la version de desarrollo de datosclima desde
 [GitHub](https://github.com/) con:
@@ -24,7 +24,7 @@ Podes instalar la version de desarrollo de datosclima desde
 pak::pak("juanasacco/datosclima")
 ```
 
-## Ejemplo
+## Ejemplos
 
 Aqui mostramos ejemplos basicos de como resolver problemas relacionados
 a nuestras funciones:
@@ -34,7 +34,7 @@ a nuestras funciones:
 ``` r
 library(datosclima)
 
-NH0437 <- suppressMessages(lectura_estaciones("NH0437", "~/prueba_paquete"))
+NH0437 <-lectura_estaciones("NH0437", paste0(tempdir(),"/NH0437"))
 ```
 
 - Con la funcion `grafico_temperatura_mensual()`:
@@ -49,15 +49,15 @@ grafico_temperatura_mensual(NH0437,color = "magenta")
 
 ``` r
 
-suppressMessages(tabla_resumen_temperatura(NH0437))
+tabla_resumen_temperatura(NH0437)
 #> # A tibble: 7 × 2
 #>   id     resumen_temp
 #>   <chr>  <table[1d]> 
-#> 1 NH0046  -0.25000   
-#> 2 NH0046  12.75000   
-#> 3 NH0046  17.65000   
-#> 4 NH0046  17.28705   
-#> 5 NH0046  22.00000   
-#> 6 NH0046  34.60000   
-#> 7 NH0046 259.00000
+#> 1 NH0437   2.10000   
+#> 2 NH0437  16.00000   
+#> 3 NH0437  21.00000   
+#> 4 NH0437  20.23105   
+#> 5 NH0437  24.70000   
+#> 6 NH0437  36.30000   
+#> 7 NH0437 191.00000
 ```

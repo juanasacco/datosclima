@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# datosclima
+# Datosclima
 
 <!-- badges: start -->
 
@@ -24,7 +24,7 @@ knitr::opts_chunk$set(
 
 El objetivo de datosclima es aprender a desarrollar paquetes con RStudio
 
-## Instalacion
+## Instalación
 
 Podes instalar la version de desarrollo de datosclima desde [GitHub](https://github.com/) con:
 
@@ -33,7 +33,7 @@ Podes instalar la version de desarrollo de datosclima desde [GitHub](https://git
 pak::pak("juanasacco/datosclima")
 ```
 
-## Ejemplo
+## Ejemplos
 
 Aqui mostramos ejemplos basicos de como resolver problemas relacionados a nuestras funciones:
 
@@ -42,7 +42,7 @@ Aqui mostramos ejemplos basicos de como resolver problemas relacionados a nuestr
 ```{r, message=FALSE, warning=FALSE}
 library(datosclima)
 
-NH0437 <- suppressMessages(lectura_estaciones("NH0437", "~/prueba_paquete"))
+NH0437 <-lectura_estaciones("NH0437", paste0(tempdir(),"/NH0437"))
 ```
 
 -   Con la funcion `grafico_temperatura_mensual()`:
@@ -53,6 +53,6 @@ grafico_temperatura_mensual(NH0437,color = "magenta")
 - Con la funcion `tabla_resumen_temperatura()`:
 ```{r, message=FALSE, warning=FALSE}
 
-suppressMessages(tabla_resumen_temperatura(NH0437))
+tabla_resumen_temperatura(NH0437)
 ```
 

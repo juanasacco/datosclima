@@ -20,7 +20,7 @@ si el archivo ya estaba descargado, lo disponibiliza para su posterior analisis,
 lo descarga y luego lo diaponibiliza
 }
 \examples{
-lectura_estaciones("NH0437", "~/prueba_paquete")
-lectura_estaciones("NH0098", "~/seguimos_probando")
+lectura_estaciones("NH0437", paste0(tempdir(),"/NH0437"))
+lectura_estaciones("NH0098", paste0(tempdir(),"/NH0098"))
 
 }
